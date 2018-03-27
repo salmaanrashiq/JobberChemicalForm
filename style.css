@@ -1,0 +1,98 @@
+a {
+  color: #7db00e
+}
+
+.grey {
+  background-color: #f3f3f3
+}
+
+.GreyBlue {
+  color: #657884
+}
+
+.greyFont {
+  color: #65787F;
+
+}
+.blue {
+  color: #012939
+}
+
+.card {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cardHeader {
+  color: #012939;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 12px;
+  font-weight: bold;
+}
+.chemical {
+
+  margin: 6px;
+}
+
+.chemical:hover {
+  opacity: 0.10;
+  background-color: yellow;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+.cardContent {
+  color: #65787F;
+  padding: 12px;
+}
+
+.btn-green {
+  background-color: #7db00e;
+  border-color: #7db00e;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn-white {
+  border-color: #7db00e;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #7db00e;
+}
+
+.header {
+  background-color: #f3f3f3;
+}
+
+.jobDetails {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.jobDetailsContainer {
+  background-color: white;
+  padding: 25px;
+}
+
+.topHeader {
+  border-top: 10px solid #bbc520;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.topHeader {
+  border-top: 10px solid #bbc520;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.iconHeader {
+  padding: 40px
+}
+
+h4 {
+  font-size: : 75%;
+}

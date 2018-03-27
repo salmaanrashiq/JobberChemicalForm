@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link link rel="stylesheet" type="text/css" href="./style.css"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <div class="container-fluid header topHeader" >
+    <div class="row iconHeader align-items-center justify-content-between">
+      <img src="hammer.svg" width="70">
+      <h3>
+        Job #1
+      </h3>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+      <div class="col-md-12">
+        <h1 class="blue">Sample Client</h1>
+        <h3 class="GreyBlue"> Pest control needed </h3>
+      </div>
+      <div class="col-md-12">
+        <h5 class="blue"> Property address </h5>
+        <p class="GreyBlue"> 555 Imaginary Street <br> San Francisco, California 94949 </p>
+      </div>
+      <div  class="col-md-12" >
+        <h5 class="blue"> Contact details </h5>
+        <p class="GreyBlue" style="margin-bottom:0"> 555-555-5555 </p> <a href="#"> test@email.com </a>
+      </div>
+    </div>
+    <div class="col-md-6 jobDetailsContainer">
+      <div class="col-md-12">
+        <h3 span class="blue"> Job Details </h3>
+        <div class="jobDetails">
+          <span class="blue"> Job type </span> <br/>
+          <span class="GreyBlue"> draft project </span>
+        </div>
+        <div class="jobDetails">
+          <span class="blue"> Started on </span> <br/>
+          <span class="GreyBlue">  03/21/18 </span>
+        </div>
+        <div class="jobDetails">
+          <span class="blue"> Ends on  </span> <br/>
+          <span class="GreyBlue"> 03/27/18 </span>
+        </div>
+        <div class="jobDetails">
+          <span class="blue"> Billing frequency </span> <br/>
+          <span class="GreyBlue"> Upon job completion </span>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid">
+    <div class="container card">
+      <div class="cardHeader">Line items</div>
+      <div class="cardContent">
+        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+        <h4>No line items</h4>
+        <p> Stay on top of what needs to be done for this job by adding your products & services </p>
+        <button type="button" class="btn btn-green">
+          + Add Line Item
+        </button>
+      </div>
+    </div>
+    <div class="container card">
+      <div class="cardHeader">Visits</div>
+      <div class="cardContent">
+        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+        <h4>No visits created</h4>
+        <p> Get the team to work by scheduling a visit </p>
+        <button type="button" class="btn btn-white btn-sm">
+          New Visit
+        </button>
+      </div>
+    </div>
+    <div class="container card">
+      <div class="cardHeader">Team Costs</div>
+      <div class="cardContent">
+        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+        <h4>No time tracked</h4>
+        <p> Get a clearer picture of labor costs by tracking your team's time </p>
+        <button type="button" class="btn btn-white btn-sm">
+          New time entry
+        </button>
+      </div>
+    </div>
+    <div class="container card">
+      <div class="cardHeader">Restricted Materials</div>
+      <div class="cardContent">
+        <div class="noContent">
+        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+        <h4>No restricted materials used</h4>
+        <p> Keep track of all those pesky chemicals </p>
+        </div>
+        <div id="insertChemical">
+
+        </div>
+        <button type="button" class="btn btn-white btn-sm" data-toggle="modal" data-target="#exampleModal">
+          New Material
+        </button>
+      </div>
+    </div>
+    <div class="container card">
+      <div class="cardHeader">Billing</div>
+      <div class="cardContent">
+        <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+        <h4>No invoices or reminders</h4>
+        <p> Fewer invoices slip through the cracks when you set up reminders </p>
+        <button type="button" class="btn btn-white btn-sm">
+          New Invoice
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New chemical</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputOperatorName">Operator Name</label>
+              <input type="text" class="form-control" id="inputChemNum" placeholder="Jane Doe">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputOperatorNum">Operator ID or Permit Number</label>
+              <input type="text" class="form-control" id="inputOperatorNum" placeholder="01010101010">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputChemName">Chemical Name</label>
+              <input type="text" class="form-control" id="inputChemName" placeholder="Rodenticide">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputChemNum">Chemical Number</label>
+              <input type="text" class="form-control" id="inputChemNum" placeholder="01010101010">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="inputAmount">Amount Used</label>
+              <input type="number" class="form-control" id="inputAmount">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputUnits">Units</label>
+              <select id="inputUnits" class="form-control">
+                <option selected>Choose...</option>
+                <option>lb</option>
+                <option>oz</option>
+                <option>pt</option>
+                <option>qt</option>
+                <option>ga</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-green" data-dismiss="modal" id='chemBtn'>Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
