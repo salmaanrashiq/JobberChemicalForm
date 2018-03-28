@@ -1,6 +1,8 @@
 # Chemical Tracker - Jobber
 
-This is an addition to the jobber work-order page that allows a client to input their chemical usage.
+This is an addition to the jobber work-order page that allows a client to input their chemical usage. This project was inspired by users asking for this feature in online reviews.
+
+Total time: 8 hours 
 
 ## Features
 This demo page prompts the user to store their chemical and then renders the result for them.
@@ -47,6 +49,7 @@ In jobber's reviews online there are multiple calls for an option to manage the 
 
 ## Additions
 
+These are some additions I would make tot
 - Implement custom form templates that are user friendly to manipulate
 - Allow users to generate any use-disclosure forms that are necessary for the controlled chemicals they're using.
 - Add a backend that stores the form templates and form data
