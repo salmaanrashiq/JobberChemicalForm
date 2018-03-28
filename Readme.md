@@ -3,6 +3,7 @@
 This is an addition to the jobber work-order page that allows a client to input their chemical usage.
 
 ## Features
+This demo page prompts the user to store their chemical and then renders the result for them.
 
 ![Feature Demonstration](https://github.com/salmaanrashiq/JobberChemicalForm/blob/master/JobberCapture.gif "Features Recording")
 
