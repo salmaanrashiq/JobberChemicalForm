@@ -2,6 +2,10 @@
 
 This is an addition to the jobber work-order page that allows a client to input their chemical usage.
 
+## Features
+
+![Feature Demonstration](https://github.com/salmaanrashiq/JobberChemicalForm/blob/master/JobberCapture.gif "Features Recording")
+
 ## Launching
 
 Check out the live version at :
@@ -13,7 +17,7 @@ Otherwise download this folder and launch it in your favourite browser
 ## Built With
 
 * [jQuery](https://jquery.com/) - DOM manipulation framework
-* HTML/ CSS - DOM rendering
+* HTML/ CSS - DOM replicated from Jobber software from scratch using HTML and CSS
 
 ## Inspiration
 
