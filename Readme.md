@@ -10,14 +10,17 @@ This demo page prompts the user to store their chemical and then renders the res
 ## Launching
 
 Check out the live version at :
-_______________________
 
-Otherwise download this folder and launch it in your favourite browser
+https://morning-fortress-77960.herokuapp.com/
+
+Otherwise download this folder and launch it in your favourite browser.
 
 
 ## Built With
 
 * [jQuery](https://jquery.com/) - DOM manipulation framework
+* [express](https://expressjs.com/) - Node.js server for heroku hosting
+* [heroku](https://www.heroku.com/) - Web and server hosting
 * HTML/ CSS - DOM replicated from Jobber software from scratch using HTML and CSS
 
 ## Inspiration
